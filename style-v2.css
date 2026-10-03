@@ -305,3 +305,66 @@ footer p { margin: 0; }
   .copyright { margin-left: 0 !important; width: 100%; }
   .scroll-hint { display: none; }
 }
+
+/* Sponsorship options */
+
+.sponsor-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin: 40px 0 32px;
+}
+
+.sponsor-card {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 28px 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+}
+
+.sponsor-level {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.sponsor-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.sponsor-card .button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sponsor-contact {
+  margin-top: 20px;
+}
+
+.sponsor-contact p {
+  margin-bottom: 16px;
+}
+
+/* Mobile sponsorship layout */
+
+@media (max-width: 900px) {
+  .sponsor-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sponsor-options {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsor-card {
+    min-height: auto;
+  }
+}
